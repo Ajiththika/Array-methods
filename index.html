@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Array Methods Explorer</h1>
+    <p class="subtitle">Learn how JavaScript array methods work — visually!</p>
+
+    <div class="controls">
+      <input id="arrayInput" type="text" value="[1,2,3,4,5]" />
+      <select id="methodSelect">
+        <option value="map">map()</option>
+        <option value="filter">filter()</option>
+        <option value="push">push()</option>
+        <option value="pop">pop()</option>
+        <option value="shift">shift()</option>
+        <option value="unshift">unshift()</option>
+        <option value="reduce">reduce()</option>
+      </select>
+      <button id="runBtn">▶ Run</button>
+      <button id="resetBtn" class="secondary">🔄 Reset</button>
+    </div>
+
+    <div class="array-display">
+      <h3>Array Visualization:</h3>
+      <div id="arrayVisual"></div>
+    </div>
+
+    <div class="output">
+      <p><strong>Original:</strong> <span id="original"></span></p>
+      <p><strong>Result:</strong> <span id="result"></span></p>
+    </div>
+
+    <div id="explanation" class="explanation"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
