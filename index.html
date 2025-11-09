@@ -8,20 +8,48 @@
 </head>
 <body>
   <div class="container">
-    <h1>🧠 Array Methods Explorer</h1>
+    <h1>Array Methods Explorer</h1>
     <p class="subtitle">Learn how JavaScript array methods work — visually!</p>
 
     <div class="controls">
       <input id="arrayInput" type="text" value="[1,2,3,4,5]" />
+      
       <select id="methodSelect">
-        <option value="map">map()</option>
-        <option value="filter">filter()</option>
-        <option value="push">push()</option>
-        <option value="pop">pop()</option>
-        <option value="shift">shift()</option>
-        <option value="unshift">unshift()</option>
-        <option value="reduce">reduce()</option>
+        <!-- Transform -->
+        <optgroup label="Transform">
+          <option value="map">map()</option>
+          <option value="filter">filter()</option>
+          <option value="reduce">reduce()</option>
+        </optgroup>
+
+        <!-- Modify -->
+        <optgroup label="Modify">
+          <option value="push">push()</option>
+          <option value="pop">pop()</option>
+          <option value="shift">shift()</option>
+          <option value="unshift">unshift()</option>
+          <option value="splice">splice()</option>
+          <option value="reverse">reverse()</option>
+          <option value="sort">sort()</option>
+        </optgroup>
+
+        <!-- Create / Combine -->
+        <optgroup label="Create / Combine">
+          <option value="concat">concat()</option>
+          <option value="slice">slice()</option>
+        </optgroup>
+
+        <!-- Search / Test -->
+        <optgroup label="Search / Test">
+          <option value="indexOf">indexOf()</option>
+          <option value="includes">includes()</option>
+          <option value="find">find()</option>
+          <option value="findIndex">findIndex()</option>
+          <option value="every">every()</option>
+          <option value="some">some()</option>
+        </optgroup>
       </select>
+
       <button id="runBtn">▶ Run</button>
       <button id="resetBtn" class="secondary">🔄 Reset</button>
     </div>
